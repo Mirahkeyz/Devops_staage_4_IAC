@@ -41,11 +41,12 @@ ssh -i hng.pem ubuntu@$(terraform output -raw instance_ip)
 
 terraform destroy
 
-Important Notes
-🚨 Private key (hng.pem) is generated automatically - keep this secure!
-⚠️ Security group allows public access to multiple ports - adjust for production use
-🔄 Ansible provisioning runs automatically after instance creation
-📄 Customize deploy.yml for application-specific configuration
+# Important Notes
+
+- 🚨 Private key (hng.pem) is generated automatically - keep this secure!
+- ⚠️ Security group allows public access to multiple ports - adjust for production use
+- 🔄 Ansible provisioning runs automatically after instance creation
+- 📄 Customize deploy.yml for application-specific configuration
 
 File Structure
 
